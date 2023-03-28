@@ -25,23 +25,50 @@
     <link href="assets/css/variables.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <style>
-      .center {
-        margin: auto;
-        width: 70%;
-        padding: 10px;
-      }
-
-      @media (min-width: 1203px) {
-        .show-on-mobile{
-          display: none;
+        .center {
+            margin: auto;
+            width: 70%;
+            padding: 10px;
         }
-      }
 
-      @media (max-width: 1202px) {
-        .show-on-desktop{
-          display: none;
+        a {
+            color: var(--color-links-hover);
+            text-decoration: none;
         }
-      }
+
+            a:hover {
+                color: var(--color-links-hover);
+                text-decoration: none;
+            }
+
+        @media (min-width: 1203px) {
+            .show-on-mobile {
+                display: none;
+            }
+
+            .icon {
+                color: var(--color-links);
+                text-decoration: none;
+                margin-right: .5rem;
+                margin-left: .5rem;
+            }
+        }
+
+        @media (max-width: 1202px) {
+            .show-on-desktop {
+                display: none;
+            }
+
+            .icon {
+                color: var(--color-links);
+                text-decoration: none;
+            }
+        }
+
+        .icon:hover {
+            color: var(--color-links-hover);
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -84,14 +111,10 @@
           </ul>
       </nav>
       <div class="position-relative">
-        <div class="show-on-desktop">
-          <a href="mailto:inquiries@bcmun.org" class="mx-2" style="font-size:24px"><span class="bi-envelope"></span></a>
-          <a href="https://www.instagram.com/bcmun2022/" class="mx-2" style="font-size:24px"><span class="bi-instagram"></span></a>
-        </div>
-        <div class="show-on-mobile">
-          <a href="mailto:inquiries@bcmun.org" style="font-size:24px"><span class="bi-envelope"></span></a>
-          <a href="https://www.instagram.com/bcmun2022/" style="font-size:24px"><span class="bi-instagram"></span></a>
-          <i class="bi mobile-nav-toggle bi-list"></i>
+        <div class="position-relative">
+            <a href="mailto:inquiries@bcmun.org" class="icon" style="font-size:24px"><span class="bi-envelope"></span></a>
+            <a href="https://www.instagram.com/bcmun2023/" class="icon" style="font-size:24px"><span class="bi-instagram"></span></a>
+            <i class="bi mobile-nav-toggle bi-list"></i>
         </div>
       </div>
     </div>
@@ -103,7 +126,7 @@
       <div class="section-header d-flex justify-content-between align-items-center mb-4">
           <h3 style="color:var(--color-blue)">Diplomatic Code</h3>
       </div>
-      <p>BCMUN is devoted to ensuring that our conference enables delegates to develop their knowledge of global issues. In order to ensure that all delegates have a positive experience, participants are required to follow our conference policies. By attending our conference, you agree to adhere to the sections shown below. If you have any questions, please contact the Secretary General, Michael Xie, at <a href="mailto:sg@bcmun.org">sg@bcmun.org</a></p>
+      <p>BCMUN is devoted to ensuring that our conference enables delegates to develop their knowledge of global issues. In order to ensure that all delegates have a positive experience, participants are required to follow our conference policies. By attending our conference, you agree to adhere to the sections shown below. If you have any questions, please contact the Secretary General, Michael Xie, at <a href="mailto:sg@bcmun.org"><u>sg@bcmun.org</u></a></p>
       
       <h4>Discrimination</h4>
       <p>BCMUN is committed to providing a safe and inclusive environment for all participants. Discrimination, harassment, and any other forms of unacceptable behavior will not be tolerated. Provincial and federal laws regarding discrimination are strictly enforced. Discrimination based on race, color, national or ethnic origin, age, religion, disability, sexual orientation, gender identity, or any other characteristic protected by law are prohibited. All participants are urged to report any instances of discrimination or harassment to our staff or secretariat, who will take appropriate action to address the situation. By upholding these discrimination policies, we aim to create a welcoming and inclusive space where everyone can feel valued and respected.</p>
