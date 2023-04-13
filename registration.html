@@ -29,10 +29,26 @@
         width: 70%;
         padding: 10px;
       }
+        
+      a {
+        color: var(--color-links-hover);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-links-hover);
+        text-decoration: none;
+      }
 
       @media (min-width: 1203px) {
         .show-on-mobile{
           display: none;
+        }
+        .icon {
+          color: var(--color-links);
+          text-decoration: none;
+          margin-right:.5rem;
+          margin-left:.5rem;
         }
       }
 
@@ -40,13 +56,31 @@
         .show-on-desktop{
           display: none;
         }
+        .icon {
+          color: var(--color-links);
+          text-decoration: none;
+        }
+      }
+
+      .icon:hover {
+        color: var(--color-links-hover);
+        text-decoration: none;
+      }
+        
+      button{
+        background: var(--color-blue);
+        border: 0;
+        padding: 10px 30px;
+        color: #fff;
+        transition: 0.4s;
+        cursor: pointer;
       }
     </style>
 </head>
 
 <body>
   <header id="header" class="header align-items-center fixed-top">
-    <div class="announcement"><h4><nobr>Staff applications for BCMUN 2023 are now open!</nobr> <nobr>Click <a href="staff-application.html">here</a> to apply!</nobr></h4></div>
+    <div class="announcement"><h4><nobr>Delegate registrations are now open!</nobr> <nobr>Click <a href="registration.html">here</a> for more information!</nobr></h4></div>
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
@@ -83,15 +117,9 @@
           </ul>
       </nav>
       <div class="position-relative">
-        <div class="show-on-desktop">
-          <a href="mailto:inquiries@bcmun.org" class="mx-2" style="font-size:24px"><span class="bi-envelope"></span></a>
-          <a href="https://www.instagram.com/bcmun2023/" class="mx-2" style="font-size:24px"><span class="bi-instagram"></span></a>
-        </div>
-        <div class="show-on-mobile">
-          <a href="mailto:inquiries@bcmun.org" style="font-size:24px"><span class="bi-envelope"></span></a>
-          <a href="https://www.instagram.com/bcmun2023/" style="font-size:24px"><span class="bi-instagram"></span></a>
-          <i class="bi mobile-nav-toggle bi-list"></i>
-        </div>
+        <a href="mailto:inquiries@bcmun.org" class="icon" style="font-size:24px"><span class="bi-envelope"></span></a>
+        <a href="https://www.instagram.com/bcmun2023/" class="icon" style="font-size:24px"><span class="bi-instagram"></span></a>
+        <i class="bi mobile-nav-toggle bi-list"></i>
       </div>
     </div>
   </header>
@@ -99,9 +127,36 @@
   <main id="main">
     <center><h1 style="padding: 30px;">Registration Overview</h1></center>
     <div class="center">
-        <center><p>The registration will open soon, follow us for further announcements</p></center>
-        <center><p>Redirecting to the home page in 3 seconds</p></center>
-        <meta http-equiv="refresh" content="3;url=index.html" />
+        <div class="section-header d-flex justify-content-between align-items-center mb-4">
+          <h3 style="color:var(--color-blue)">Overview</h3>
+        </div>
+        <p>British Columbia Model United Nations (BCMUN) is hosted in Vancouver, Canada. This highly anticipated two-day hotel conference provides an opportunity for high school students from around the globe to enhance their public speaking, debate, diplomatic attitudes, and critical thinking skills. BCMUN creates an ideal environment for personal growth and learning, equipping students with the essential skills needed to become effective communicators and future leaders.</p>
+        <p>BCMUN is an avenue for hundreds of students to expand their knowledge on global issues while forging new friendships. It features a broad range of committees, including UN General Assemblies and advanced crisis committees, where students can participate in discussions and debates on critical issues like climate change, nuclear disarmament, and human rights. The conference's committee simulations offer a unique opportunity for students to gain a deeper understanding of diverse perspectives and cultures. BCMUN is a platform that encourages idea-sharing, cultural exchange, and networking among peers from various parts of the world. Please contact <a href="mailto:delaffairs@bcmun.org"><u>delaffairs@bcmun.org</u></a> if you have any questions.</p>
+    
+        <div class="section-header d-flex justify-content-between align-items-center mb-4">
+          <h3 style="color:var(--color-blue)">Overview</h3>
+        </div>
+        <p>Schools should first register their delegation through our delegation registration form, found <a href="delegation-registration">here</a>. Once a school registers, it will be added to our delegate registration form within 48 hours. Delegates of the school may register once their school is added to the delegate registration form. BCMUN, however, does not require delegates to attend with a delegation. Independent delegates are welcome to stay overnight at our hotel venue.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <center><button class="button" onclick="window.location.href='delegation-registration.html';"><h5>Delegation Registration Form</h5></button></center>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <center><button class="button" onclick="window.location.href='individual-registration.html';"><h5>Individual Registration Form</h5></button></center>
+                </div>
+            </div>
+        </div>
+        <p>As part of a TMUN-BCMUN partnership, all delegates who attended TMUN 2023 in person will receive a 15% discount on their delegate registration fee.</p>
+        <p>Room upgrades will be available closer to the conference. All rooms are quadruple occupancy by default. Prices for delegate registration, before discounts, can be found below:</p>
+        <table class="table">
+          <tbody>
+            <tr><td></td><td>Early registration<br>(April 13 - June 1)</td><td>Regular registration<br>(June 2 - September 1)</td><td>Late registration<br>(September 2 - October 15)</td></tr>
+            <tr><td>Day delegate</td><td>180.00 CAD</td><td>185.00 CAD</td><td>195.00 CAD</td></tr>
+            <tr><td>Overnight delegate</td><td>260.00 CAD</td><td>265.00 CAD</td><td>295.00 CAD</td></tr>
+          </tbody>
+        </table>
+        <p>The price for sponsor teacher rooms is 430.00 CAD per room, regardless of number of teachers.</p>
     </div>
   </main>
 
