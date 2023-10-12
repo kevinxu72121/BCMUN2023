@@ -85,7 +85,7 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       document.getElementById("countdown").innerHTML = "<span style='white-space: nowrap;'>BCMUN 2023 delegate registration ends in </span> <span style='white-space: nowrap;'>" + days + " days " + hours + " hours "
-      + minutes + " minutes " + seconds + " seconds!</span>";
+      + minutes + " minutes! <a href='/registration'>Register now</a>!</span>";
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "<span style='white-space: nowrap;'>BCMUN 2023 delegate registration has ended!</span>";
