@@ -46,7 +46,26 @@
 
 <body>
   <header id="header" class="header align-items-center fixed-top">
-    <div class="announcement"><h4><nobr>BCMUN 2023 is recruiting more flex staffs!</nobr> <nobr>Click <a href="flex-staff-application">here</a> to apply!</nobr></h4></div>
+    <div class="announcement"><h4 id="countdown"></h4></div>
+    
+    <script>
+      var countDownDate = new Date("Oct 15, 2023 23:59:59").getTime();
+      
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = "<span style='white-space: nowrap;'>BCMUN 2023 delegate registration ends in </span> <span style='white-space: nowrap;'>" + days + " days " + hours + " hours "
+      + minutes + " minutes " + seconds + " seconds!</span>";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "<span style='white-space: nowrap;'>BCMUN 2023 delegate registration has ended!</span>";
+      }
+    }, 1000);
+    </script>
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="/" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
