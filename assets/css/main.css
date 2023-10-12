@@ -25,13 +25,13 @@ h6 {
   font-family: var(--font-primary);
 }
 
-@media (min-width: 504px) {
+@media (min-width: 600px) {
   #main {
     margin-top: 150px; /*150px for announcement*/
   }
 }
 
-@media (max-width: 503px) {
+@media (max-width: 599px) {
   #main {
     margin-top: 170px; /*170px for announcement*/
   }
