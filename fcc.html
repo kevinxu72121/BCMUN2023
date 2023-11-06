@@ -80,13 +80,29 @@
             .staff-show-on-mobile{
                 display: none;
             }
+            .icon {
+              color: var(--color-links);
+              text-decoration: none;
+              margin-right:.5rem;
+              margin-left:.5rem;
+            }
         }
 
         @media (max-width: 991px) {
             .staff-show-on-desktop{
                 display: none;
             }
+
+            .icon {
+              color: var(--color-links);
+              text-decoration: none;
+            }
         }
+
+        .icon:hover {
+            color: var(--color-links-hover);
+            text-decoration: none;
+          }
 
         a {
         color: var(--color-links-hover);
@@ -140,12 +156,12 @@
       </nav>
       <div class="position-relative">
         <div class="show-on-desktop">
-          <a href="mailto:inquiries@bcmun.org" class="mx-2" style="font-size:24px"><span class="bi-envelope"></span></a>
-          <a href="https://www.instagram.com/bcmun2023/" class="mx-2" style="font-size:24px"><span class="bi-instagram"></span></a>
+          <a href="mailto:inquiries@bcmun.org" class="icon" style="font-size:24px"><span class="bi-envelope"></span></a>
+          <a href="https://www.instagram.com/bcmun2023/" class="icon" style="font-size:24px"><span class="bi-instagram"></span></a>
         </div>
         <div class="show-on-mobile">
-          <a href="mailto:inquiries@bcmun.org" style="font-size:24px"><span class="bi-envelope"></span></a>
-          <a href="https://www.instagram.com/bcmun2023/" style="font-size:24px"><span class="bi-instagram"></span></a>
+          <a href="mailto:inquiries@bcmun.org" class="icon" style="font-size:24px"><span class="bi-envelope"></span></a>
+          <a href="https://www.instagram.com/bcmun2023/" class="icon" style="font-size:24px"><span class="bi-instagram"></span></a>
           <i class="bi mobile-nav-toggle bi-list"></i>
         </div>
       </div>
