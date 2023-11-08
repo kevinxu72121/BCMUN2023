@@ -33,7 +33,7 @@ h6 {
 
 @media (max-width: 599px) {
   #main {
-    margin-top: 160px; /*170px for announcement*/
+    margin-top: 150px; /*170px for announcement*/
   }
 }
 
@@ -123,14 +123,14 @@ section {
 
 @media (max-width: 503px) {
   .header {
-    height: 160px;
+    height: 150px;
     transition: all 0.5s;
     z-index: 997;
     background: #FFFFFF;
   }
 
   .header.sticked {
-    height: 170px;
+    height: 150px;
   }
 }
 
