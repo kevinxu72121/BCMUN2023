@@ -27,13 +27,13 @@ h6 {
 
 @media (min-width: 600px) {
   #main {
-    margin-top: 150px; /*150px for announcement*/
+    margin-top: 10px; /*150px for announcement*/
   }
 }
 
 @media (max-width: 599px) {
   #main {
-    margin-top: 150px; /*170px for announcement*/
+    margin-top: 10px; /*170px for announcement*/
   }
 }
 
@@ -110,7 +110,7 @@ section {
 /*height 150px for announcement*/
 @media (min-width: 504px) {
   .header {
-    height: 150px;
+    height: 10px;
     transition: all 0.5s;
     z-index: 997;
     background: #FFFFFF;
@@ -123,7 +123,7 @@ section {
 
 @media (max-width: 503px) {
   .header {
-    height: 150px;
+    height: 10px;
     transition: all 0.5s;
     z-index: 997;
     background: #FFFFFF;
