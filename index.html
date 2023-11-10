@@ -108,6 +108,7 @@
       }
 
       .modal-content {
+        display: block;
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
@@ -193,13 +194,16 @@
     </div>
     <script>
       var modal = document.getElementByClassName("modal");
+      var modal-content = document.getElementByClassName("modal-content");
       var span = document.getElementsByClassName("close")[0];
       span.onclick = function() {
         modal.style.display = "none";
+        modal-content.style.display = "none";
       }
       window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
+          modal-content.style.display = "none";
         }
       }
     </script>
